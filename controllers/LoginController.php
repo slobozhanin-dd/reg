@@ -1,8 +1,10 @@
 <?php
 
-class LoginController{
+class LoginController
+{
     public function actionLogin()
     {
+
         $email = false;
         $password = false;
 
@@ -26,6 +28,7 @@ class LoginController{
                 $errors[] = 'Неправильные данные для входа на сайт';
             } else {
                 User::auth($userId);
+                header("Location: /form");
 
             }
         }

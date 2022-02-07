@@ -29,7 +29,7 @@
                     <input type="text" name="email" placeholder="Введите email" value="<?php echo $email; ?>">
                     <label>Фамилия</label>
                     <input type="text" name="surname" placeholder="Введите Фамилию" value="<?php echo $surname; ?>">
-                    <label><?php echo 3 + 3 ?></label>
+                    <label>Имя</label>
                     <input type="text" name="name" placeholder="Введите Имя" value="<?php echo $name; ?>">
                     <label>Пароль</label>
                     <input type="password" name="password" placeholder="Введите Пароль" value="<?php echo $password; ?>">
@@ -37,7 +37,7 @@
                     <input type="password" name="checkpassword" placeholder="Подтвердите пароль">
                     <input type="submit" name="submit" class="button" value="Регистрация" />
                     <p>
-                        У вас уже есть аккаунт? <a href="login.php">Войти</a>
+                        У вас уже есть аккаунт? <a href="login">Войти</a>
                     </p>
                 </form>
 

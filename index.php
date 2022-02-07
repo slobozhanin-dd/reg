@@ -1,32 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Авторизация</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body>
-    <div class="container ">
-        <div class="row ">
-            <div class="col">
+<?php
 
-            </div>
-            <div class="col">
-                 <form action="" method="post">
-                    <label>Логин</label>
-                    <input type="text" placeholder="Введите логин">
-                    <label>Пароль</label>
-                    <input type="text" placeholder="Введите пароль">
-                    <button>Войти</button>
-                    <p>
-                        У вас нет аккаунта? <a href="reg.php">Зарегистрироваться</a>
-                    </p>
-              </form>
-            </div>
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
-        </div>
-    </div>
+session_start();
 
-</body>
-</html>
+define('ROOT', dirname(__FILE__));
+require_once(ROOT .'/components/Autoload.php');
+
+$router = new Router;
+$router->run();

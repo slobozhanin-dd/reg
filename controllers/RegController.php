@@ -6,7 +6,6 @@ class RegController
     public function actionReg()
     {
 
-
         $name = false;
         $surname = false;
         $email = false;
@@ -40,7 +39,7 @@ class RegController
 
                 $result = User::register($name, $surname, $email, $password);
 
-                header("Location: /views/login.php");
+                header("Location: /login");
             }
         }
 
